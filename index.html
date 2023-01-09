@@ -4,12 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="style.css">
     <title>Encriptador</title>
 </head>
 <body>
     <img src="image/Logo.png" id="logo">
-    <textarea name="textarea" rows="30" cols="50" placeholder="Ingrese el texto aqui" id="textoE"></textarea>
-    
+    <form method="post" name="form">
+        <textarea name="textarea" rows="30" cols="50" placeholder="Ingrese el texto aqui" id="textoE" required></textarea>
+        <div class="info">          
+            
+        </div>
+        <div id="botones">
+            <p id="warning"> <img src="image/avertissement.png" id="admiracion"> Solo letras minúsculas y sin acentos</p>
+            <button type="button" onclick="encriptarMensaje()" id="encriptar" >Encriptar</button>
+            <button id="desencriptar">Desencriptar</button>
+        </div>
+    </form>    
+    <div class="tarjeta">
+        <textarea name="text_descrip" rows="30" cols="50" id="text_descrip" ></textarea>
+        <img src="image/Muñeco.png" alt="Imagen" id="img_des"> 
+        <div id="texto">
+            <h1>Ningún mensaje fue encontrado</h1>
+            <p>Ingresa el texto que desees encriptar o desencriptar.</p>        
+        </div>    
+        <button id="copiar">Copiar</button>
+    </div>
+    <script src="encript.js"></script>
 </body>
 </html>
