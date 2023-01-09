@@ -127,3 +127,25 @@ p {
   width: 16px;
   height: 16px;
 }
+
+
+@media screen and (max-width: 400px) {
+  .encriptador {
+    margin: 0 16px;
+    width: calc(100% - 32px);
+  }
+
+  #textoE {
+    width: calc(100% - 32px);
+  }
+
+  #botones {
+    flex-direction: column;
+    flex-basis: 50%;
+    padding: 23px 0;
+    margin-right: 0;
+    margin-bottom: 12px;  
+    margin-top: 12px;
+    margin-left: 0;
+  }
+}
